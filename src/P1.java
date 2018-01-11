@@ -24,13 +24,13 @@ public class P1 {
         System.out.println("Please enter a value for k");
         k = scan.nextInt();
 
-        // for i in 0 - 2^n
+        // for i in 0 - 2^n ( each possible subset )
         for (int i = 0; i < Math.pow(2, n); i++) {
             // reset variables
             int numElems = 0;
             String subset = "{";
             int quotient = i;
-            // for each possible subset
+            // for each bit position
             for (int j = 0; j < n; j++) {
                 int remainder = quotient % 2;
                 quotient = quotient / 2;
