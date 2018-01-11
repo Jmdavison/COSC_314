@@ -34,7 +34,7 @@ public class P1 {
             for (int j = 0; j < n; j++) {
                 int remainder = quotient % 2;
                 quotient = quotient / 2;
-                // determine bit values
+                // determine bit value
                 if(remainder == 1) {
                     numElems++;
                     subset += (j+1) + ",";
